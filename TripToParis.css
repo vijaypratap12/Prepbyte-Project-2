@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-left: 90px;
+}
+label {
+  font-size: 23px;
+}
+i {
+  color: red;
+  margin: 0px 15px;
+}
+
+.main-container {
+  display: grid;
+  place-items: center;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bolder;
+  opacity: 0.8;
+}
+
+h1:before {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 2px;
+  background: grey;
+  left: 20%;
+  top: 14%;
+  position: absolute;
+}
+h1:after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 2px;
+  background: grey;
+  right: 20%;
+  top: 14%;
+  position: absolute;
+}
+
+.back-arrow {
+  font-size: 35px;
+  opacity: 0.8;
+}
+
+.card {
+  border: 1px solid red;
+  margin: 0px 50px;
+  height: 350px;
+  width: 380px;
+  border-radius: 10px;
+  box-shadow: 23px 23px 60px #c0bebe, -23px -23px 60px #ffffff;
+}
+
+.card p {
+  text-align-last: center;
+  color: red;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.card p::after {
+  content: "";
+  background-color: red;
+  width: 190px;
+  height: 2.5px;
+  position: absolute;
+  transform: translate(-100%);
+  top: 415px;
+}
+
+.card-heading-box {
+  border-bottom: 1px solid grey;
+  margin-left: 100px;
+}
+
+.card-heading-box h3 {
+  color: red;
+  font-weight: 100;
+  font-size: 26px;
+  opacity: 0.7;
+}
+
+.plus-icon i {
+  position: absolute;
+  left: 800px;
+  top: 85%;
+  font-size: 35px;
+  opacity: 0.7;
+}
